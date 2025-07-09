@@ -2,9 +2,9 @@
 
 Адаптивный сайт для онлайн-продажи уточек с доставкой и блогом для единомышленников.
 
-<o>
-  <img src="./public/home/quack.svg" alt="Кря" width="80"/>
-  <img src="./public/home/duck.svg" alt="Уточка" width="80"/>
+<p>
+  <img src="./public/home/quack.svg" alt="Кря" width="50" style="vertical-align: 40px; margin-right: 1px;" />
+  <img src="./public/home/duck.svg" alt="Уточка" width="150"/>
 </p>
 
 ## Описание
