@@ -15,7 +15,7 @@
 <script setup>
 import ManyTxt from '/home/many_txt.svg'
 import DuckTxt from '/home/duck_txt.svg'
-import Duck from '/home/duck.svg'
+import Duck from '/home/duck.png'
 import Quack from '/home/quack.svg'
 import MyButton from '../ui/MyButton.vue';
 </script>
