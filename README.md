@@ -1,5 +1,37 @@
-# Vue 3 + Vite
+# Магазин уточек — Duck Store
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Адаптивный сайт для онлайн-продажи уточек с доставкой и блогом для единомышленников.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+<o>
+  <img src="./public/home/quack.svg" alt="Кря" width="80"/>
+  <img src="./public/home/duck.svg" alt="Уточка" width="80"/>
+</p>
+
+## Описание
+
+Проект реализует главную страницу с ярким hero section, включающим:
+
+- Фоновую фотографию
+- Крупный заголовок и подзаголовок
+- CTA-кнопку (призыв к действию)
+- Поп-ап с формой обратной связи (с маской для телефона)
+- Адаптивную шапку с навигацией и корзиной
+
+## Основные компоненты
+
+- **Hero Section** — главный блок с фоном, заголовком, подзаголовком и кнопкой
+- **Navbar** — шапка сайта с логотипом, меню, корзиной и кнопкой
+- **NavList** — навигационное меню
+- **Popup Form** — модальное окно с формой обратной связи
+- **Home** — основной контент главной страницы
+
+## Запуск проекта
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+Проект создан для демонстрации современного подхода к верстке hero section и работы с pop-up без сторонних библиотек.
