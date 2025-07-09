@@ -1,11 +1,11 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
-import Home from './components/Home.vue'
+import HeroSection from './pages/HeroSection.vue';
 </script>
 
 <template>
   <Navbar />
-  <Home />
+  <HeroSection />
 </template>
 
 

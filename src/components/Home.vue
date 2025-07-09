@@ -110,8 +110,8 @@ import MyButton from '../ui/MyButton.vue';
 
   .home-wrapper {
       width: 100%;
-      height: 700px;
-      padding-right: 1.62%;
+      height: 500px;
+      padding-right: 1.7%;
       overflow: hidden;
       position: relative;
    } 
@@ -150,8 +150,8 @@ import MyButton from '../ui/MyButton.vue';
 @media (max-width: 375px) {
       .home-wrapper {
       width: 100%;
-      height: 700px;
-      padding-right: 4.53%;
+      height: 550px;
+      padding-right: 4.58%;
       overflow: hidden;
       position: relative;
    } 
