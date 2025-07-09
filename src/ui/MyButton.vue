@@ -10,7 +10,7 @@ export default {
   props: {
     color: {
       type: String,
-      default: 'orange', // или 'blue'
+      default: 'orange',
     },
   },
   computed: {
@@ -37,7 +37,7 @@ export default {
   text-align: center;
   border-radius: 8px;
   border: none;
-  padding: 0 12.5px; /* или другой нужный вам padding */
+  padding: 0 12.5px;
   background: var(--Orange, rgba(234, 179, 8, 1));
   cursor: pointer;
   transition: background 0.2s;
