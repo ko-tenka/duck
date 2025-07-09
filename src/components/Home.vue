@@ -21,6 +21,8 @@ import MyButton from '../ui/MyButton.vue';
 </script>
 
 <style scoped>
+
+
 .vissually-hidden{
     position: absolute;
     width: 1px;
@@ -105,74 +107,82 @@ import MyButton from '../ui/MyButton.vue';
 }
 
 @media (max-width: 960px) {
+
+  .home-wrapper {
+      width: 100%;
+      height: 700px;
+      padding-right: 1.62%;
+      overflow: hidden;
+      position: relative;
+   } 
     .home-image--many {
-        top: 130px;
+        top: 48px;
+        left: 11px;
+
     }
     
     .home-image--duck-text {
-        top: 252px;
-        left: 27px;
+        top: 170px;
+        left: 5px;
     }
     
     .home-image--quack {
-        top: 332px;
-        left: 602px;
+        top: 206px;
+        left: 585px;
     }
     
     .home-image--duck {
-        top: 108px;
-        left: 612px;
+        top: -15px;
+        left: 635px;
+        width: 577px;
+        height: 577px;
     }
     
     .home-content{
         opacity: 1;
         text-align: center;
-        top: 392px;
-        left: 27px;
+        top: 330px;
+        left: 0px;
     }
 
 }
 
 @media (max-width: 375px) {
+      .home-wrapper {
+      width: 100%;
+      height: 700px;
+      padding-right: 4.53%;
+      overflow: hidden;
+      position: relative;
+   } 
     .home-image--many {
-        width: 300px;
-        height: 90px;
-        top: 100px;
-        left: 15px;
+        width: 285px;
+        height: 64px;
+        top: 51px;
+        left: 6px;
     }
     .home-image--duck-text {
-        width: 320px;
-        height: 90px;
-        top: 160px;
-        left: 20px;
+        width: 328px;
+        height: 64px;
+        top: 130px;
+        left: 3px;
     }
     .home-image--duck {
-        width: 350px;
-        height: 350px;
-        top: 60px;
-        left: 15px;
+        width: 343px;
+        height: 343px;
+        top: 245px;
+        left: 167px;
     }
     .home-image--quack {
-        width: 80px;
-        height: 70px;
-        top: 220px;
-        left: 150px;
+        width: 64px;
+        height: 56px;
+        top: 370px;
+        left: 145px;
     }
     .home-content {
-        width: 250px;
-        height: 70px;
-        top: 280px;
-        left: 20px;
-        gap: 5px;
+        top: 227px;
+        left: 0px;
     }
-    .home-content p {
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 0.2px;
-    }
-    .home-content .my-button {
-        width: 120px;
-        height: 32px;
-    }
+
 }
 </style> 
