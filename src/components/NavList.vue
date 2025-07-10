@@ -102,6 +102,7 @@ import Arrow from '/arrow.svg'
     width: 32px;
     height: 32px;
   }
+/* пупупупу */
 }
 
 </style>

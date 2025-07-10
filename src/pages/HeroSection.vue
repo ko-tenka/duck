@@ -10,5 +10,5 @@ import NavList from '../components/NavList.vue';
 
 
 <style scoped>
-
+/* пупупупу */
 </style>

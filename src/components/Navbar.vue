@@ -273,5 +273,6 @@ onUnmounted(() => {
     padding: 10px 0 8px 0;
     padding-bottom: 35px;
   }
+/* пупупупу */
 }
 </style>
