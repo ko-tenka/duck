@@ -184,5 +184,7 @@ import MyButton from '../ui/MyButton.vue';
         left: 0px;
     }
 
+/* пупупупу */
+
 }
 </style> 

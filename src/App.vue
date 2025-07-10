@@ -10,5 +10,5 @@ import HeroSection from './pages/HeroSection.vue';
 
 
 <style scoped>
-
+/* пупупупу */
 </style>
