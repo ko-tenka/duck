@@ -10,7 +10,8 @@
         <label class="form-label form-label--phone">Телефон <span class="form-required">*</span></label>
         <input type="tel" placeholder="+7 000 000 00 00 " required />
       </div>
-      <button type="submit" class="form-submit">Отправить</button>
+      <MyButton color="orange" class="form-submit" >Отправить</MyButton>
+      <!-- <button type="submit" class="form-submit">Отправить</button> -->
       <div class="form-agreement">
         Нажимая кнопку “Отправить”, вы соглашаетесь с <a href="#" class="form-link">политикой конфиденциальности</a> и <a href="#" class="form-link">договором оферты</a>
       </div>
@@ -21,6 +22,7 @@
 <script setup>
 // Можно добавить логику, если потребуется
 import Close from '/close.svg'
+import MyButton from '../ui/MyButton.vue'
 </script>
 
 <style scoped>
@@ -37,19 +39,19 @@ import Close from '/close.svg'
   z-index: 200;
 }
 .form-popup {
-  width: 90vw;
-  max-width: 26rem;
-  height: auto;
+  width: 95vw;
+  max-width: 29.6rem;
+  min-height: 25.5rem;
   background: var(--color-bg);
   border-radius: 1.25rem;
-  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  padding: 2.5rem 2.8rem 2.5rem 2.8rem;
   box-sizing: border-box;
   opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  gap: 1.25rem;
+  gap: 1.3rem;
 }
 .form-close {
   position: absolute;
@@ -67,14 +69,15 @@ import Close from '/close.svg'
 .form-fields {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.27rem;
   width: 100%;
   align-items: flex-start;
+  margin-top: 0.2rem;
 }
 .form-fields input {
   width: 100%;
   min-width: 10rem;
-  height: 2.5rem;
+  height: 2.8rem;
   padding: 0.6rem 1rem;
   border-radius: 0.88rem;
   border: 1px solid var(--color-grey);
@@ -82,32 +85,20 @@ import Close from '/close.svg'
   opacity: 1;
   box-sizing: border-box;
   display: block;
+  margin-top: -0.3rem;
 }
 .form-fields input::placeholder {
   color: var(--color-placeholder);
   opacity: 1;
 }
 .form-submit {
-  background: var(--color-orange);
-  color: var(--color-bg);
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.6rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
   width: 100%;
-  margin-top: -0.6rem;
-}
-.form-submit:hover {
-  background: var(--color-orange-hover);
 }
 .form-agreement {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-black);
   text-align: start;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .form-agreement .form-link {
   color: var(--color-list);
@@ -118,21 +109,18 @@ import Close from '/close.svg'
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.375rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   letter-spacing: 0%;
   color: var(--color-black);
-  margin-bottom: 0.13rem;
+  /* margin-bottom: 0.2rem; */
   display: block;
   text-align: left;
   width: 100%;
 }
-.form-label--name {
-  margin-bottom: -0.06rem;
-}
 .form-label--phone {
-  margin-bottom: -0.06rem;
-  margin-top: 0.5rem;
+
+  margin-top: 0.4rem;
 }
 .form-required {
   color: var(--color-error);
@@ -141,16 +129,17 @@ import Close from '/close.svg'
 }
 @media (max-width: 960px) {
   .form-popup {
-    width: 96vw;
-    max-width: 21.5rem;
+    width: 98vw;
+    max-width: 24.5rem;
+    min-height: 23rem;
     border-radius: 1.25rem;
-    padding: 1.25rem 1rem 1.25rem 1rem;
-    gap: 1.25rem;
+    padding: 1.21rem 1.2rem 1.26rem 1.19rem;
+    gap: 1.4rem;
   }
   .form-fields input {
     width: 100%;
     min-width: 8rem;
-    height: 2.5rem;
+    height: 2.8rem;
     border-radius: 0.88rem;
     padding: 0.6rem 1rem;
     opacity: 1;
