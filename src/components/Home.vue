@@ -4,7 +4,7 @@
         <img :src="ManyTxt" alt="Много" class="home-image home-image--many">
         <img :src="DuckTxt" alt="Уточек" class="home-image home-image--duck-text">
         <img :src="Quack" alt="Кря" class="home-image home-image--quack">
-        <img :src="Duck" alt="Утка" class="home-image home-image--duck">
+        <img :src="is375 ? Duck375 : (is960 ? Duck960 : Duck)" alt="Утка" class="home-image home-image--duck">
         <div class="home-content">
             <p>Маленький друг найдётся для каждого в этом кряквенно жёлтом мире</p>
             <MyButton color="blue">Смотреть уточек</MyButton>
@@ -13,11 +13,29 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 import ManyTxt from '/home/many_txt.svg'
 import DuckTxt from '/home/duck_txt.svg'
-import Duck from '/home/duck.png'
+import Duck from '/home/duck.svg'
 import Quack from '/home/quack.svg'
 import MyButton from '../ui/MyButton.vue';
+
+import Duck960 from '/home/duck-960.svg'
+import Duck375 from '/home/duck_375.png'
+
+
+const is960 = ref(window.innerWidth <= 960)
+const is375 = ref(window.innerWidth <= 375)
+function handleResize() {
+  is960.value = window.innerWidth <= 960
+  is375.value = window.innerWidth <= 375
+}
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <style scoped>
@@ -36,64 +54,55 @@ import MyButton from '../ui/MyButton.vue';
     height: auto;
 }
 .home-image--many {
-    width: 30vw;
-    height: 9.5vw;
+    width: 37vw;
+    /* height: 9.5vw; */
     opacity: 1;
     position: absolute;
-    top: 9.5vw;
-    left: 1.7vw;
+    top: 12.3vw;
+    left: 2.1vw;
 }
 
 .home-image--duck-text {
-    width: 34vw;
-    height: 9.5vw;
+    width: 42vw;
+    /* height: 9.5vw; */
     opacity: 1;
     position: absolute;
-    top: 15.6vw;
-    left: 46vw;
+    top: 19.5vw;
+    left: 56.3vw;
 }
 
 .home-image--quack {
-    width: 7.5vw;
-    height: 6.8vw;
+    width: 9.3vw;
     opacity: 1;
     position: absolute;
-    top: 21vw;
-    left: 18vw;
+    top: 25.5vw;
+    left: 22vw;
 }
 
 .home-image--duck {
-    width: 40vw;
-    height: 40vw;
+    width: 48.2vw;
     opacity: 1;
     position: absolute;
-    top: 6.7vw;
-    left: 21vw;
+    top: 8.9vw;
+    left: 26vw;
 }
 
 .home-content{
-    width: 20vw;
-    height: 5.4vw;
-    opacity: 0.8;
+    width: 25vw;
+    opacity: 1;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
+    top: 30.3vw;
+    left: 66.9vw;
+ 
     gap: 0.44rem;
 }
 .home-content p {
     font-size: 1.1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.025rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.055rem;
     margin: 0;
     text-align: left;
-}
-.home-content .my-button {
-    width: 9.8vw;
-    height: 2.4vw;
-    opacity: 1;
+    margin-bottom: 0.7vw;
 }
 
 @media (min-width: 1281px) {
@@ -112,93 +121,84 @@ import MyButton from '../ui/MyButton.vue';
 @media (max-width: 960px) {
 
   .home-wrapper {
-      width: 100%;
-      height: 31vw;
-      padding-right: 1.7%;
+      width: 98.1vw;
+      height: 60vw;
       overflow: hidden;
       position: relative;
    } 
     .home-image--many {
-        top: 3vw;
-        left: 0.7vw;
-
+        top: 8vw;
+        left: 1.2vw;
+        width: 49vw;
     }
     
     .home-image--duck-text {
-        top: 10.6vw;
-        left: 0.3vw;
+        top: 20.6vw;
+        left: 0.4vw;
+        width: 56.5vw;
     }
     
     .home-image--quack {
-        top: 12.8vw;
-        left: 36vw;
+        top: 22vw;
+        left: 61vw;
+        width: 12.5vw;
     }
     
     .home-image--duck {
-        top: -1vw;
-        left: 40vw;
-        width: 36vw;
-        height: 36vw;
+        top: 0vw;
+        left: 66.3vw;
+        width: 32vw;
     }
     
     .home-content{
-        opacity: 1;
-        text-align: center;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        width: 34vw;
+        top: 34.6vw;
+        left: 0vw;
     }
 
 }
 
 @media (max-width: 375px) {
       .home-wrapper {
-      width: 100%;
-      height: 36vw;
+      width: 92vw;
+      height: 150vw;
       padding-right: 4.58%;
       overflow: hidden;
       position: relative;
    } 
     .home-image--many {
-        width: 18vw;
-        height: 4vw;
-        top: 3.2vw;
-        left: 0.4vw;
+        width: 76vw;
+        top: 15vw;
+        left: 2vw;
     }
     .home-image--duck-text {
-        width: 21vw;
-        height: 4vw;
-        top: 8.1vw;
-        left: 0.2vw;
+        width: 87vw;
+        top: 36vw;
+        left: 0.8vw;
     }
     .home-image--duck {
-        width: 22vw;
-        height: 22vw;
-        top: 15.3vw;
-        left: 10.5vw;
+        width: 51vw;
+        top: 68vw;
+        left: 45vw;
     }
     .home-image--quack {
-        width: 4vw;
-        height: 4vw;
-        top: 13.7vw;
-        left: 9.4vw;
+        width: 16.5vw;
+        top: 99.5vw;
+        left: 39.5vw;
     }
     .home-content {
-        width: 16vw;
-        height: 4vw;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        gap: 0.3rem;
+        width: 85vw;
+        top: 61vw;
+        left: 0vw;
+ 
     }
     .home-content p {
-        font-size: 0.8rem;
-        line-height: 1.1rem;
-        letter-spacing: 0.01rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        letter-spacing: 0rem;
     }
-    .home-content .my-button {
-        width: 8vw;
-        height: 2vw;
+    .my-button {
+        margin-top: 2.5vw;
     }
 }
 </style> 
