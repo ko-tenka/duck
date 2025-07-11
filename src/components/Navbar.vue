@@ -241,6 +241,7 @@ onUnmounted(() => {
   pointer-events: auto;
 }
 
+
 @media (max-width: 960px) {
   .navbar-list {
     display: none !important;

@@ -106,15 +106,12 @@ onUnmounted(() => {
 }
 
 @media (min-width: 1281px) {
-.home-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 1280px;
+.home-wrapper { 
     min-height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      height: 60vw;
+      overflow: hidden;
+      position: relative;
+      margin-top: -7vw;
 }
 }
 

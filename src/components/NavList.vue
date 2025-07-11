@@ -55,12 +55,7 @@ import Arrow from '/arrow.svg'
 
 @media (min-width: 1281px) {
 .nav-list {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 41vw auto;
+    margin-top: -8vw;
 }
 }
 
