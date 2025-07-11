@@ -5,7 +5,7 @@ import NavList from '../components/NavList.vue';
 
 <template>
   <Home />
-  <!-- <NavList /> -->
+  <NavList />
 </template>
 
 

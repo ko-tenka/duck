@@ -24,14 +24,14 @@ import Arrow from '/arrow.svg'
   padding: 0 1.5rem;
   list-style: none;
   min-height: 3.5rem;
-  margin-top: 37vw;
-  margin-left: 1.6rem;
+  margin-top: 47.2vw;
+  margin-left: 1.8rem;
 }
 .nav-list li {
   display: flex;
   align-items: center;
-  margin-right: 2.75rem;
-  gap: 1rem; 
+  margin-right: 3.2rem; /* увеличено расстояние между элементами */
+  gap: 4.4rem; /* стрелка ближе к тексту */
 }
 .nav-list li:last-child {
   margin-right: 0;
@@ -40,8 +40,8 @@ import Arrow from '/arrow.svg'
   color: var(--color-text-main);
   text-decoration: none;
   font-weight: 500;
-  letter-spacing: 0.03rem;
-  font-size: 1rem;
+  letter-spacing: 0.06rem;
+  font-size: 1.1rem;
 }
 .nav-list a:hover {
   color: var(--color-list); 
@@ -50,7 +50,7 @@ import Arrow from '/arrow.svg'
   width: 2rem;
   height: 2rem;
   display: inline-block;
-  margin-right: -0.5rem;
+  margin-right: -4vw;
 }
 
 @media (min-width: 1281px) {
@@ -66,15 +66,15 @@ import Arrow from '/arrow.svg'
 
 @media (max-width: 960px) {
   .nav-list {
-    min-height: 3rem;
+    /* min-height: 3rem; */
     font-size: 0.88rem;
-    margin-top: 0.5rem;
+    margin-top: -4.5rem;
     margin-left: -0.6rem;
     width: 97%;
   }
   .nav-list li {
-    margin-right: 1.5rem;
-    gap: 1rem;
+    margin-right: 1.8rem;
+    gap: 3.5rem;
   }
 }
 
@@ -83,20 +83,17 @@ import Arrow from '/arrow.svg'
     flex-direction: column;
     align-items: stretch;
     min-height: 2.25rem;
-    margin-top: -6rem;
+    margin-top: -7.3rem;
     padding: 0;
     width: 80vw;
-    margin-left: 0;
+    margin-left: 0.1rem;
   }
   .nav-list li {
-    margin: 0 0 0.75rem 0;
-    gap: 1rem;
+    margin: 0 0 1.15rem 0;
+    gap: 1.8rem;
     font-size: 0.75rem;
     width: 100%;
     justify-content: flex-start;
-  }
-  .nav-list li:last-child {
-    margin-bottom: 0;
   }
   .nav-list img {
     width: 2rem;
