@@ -18,39 +18,39 @@ import Arrow from '/arrow.svg'
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; /* Центрирует список по горизонтали */
+  justify-content: center; 
   width: 90vw;
   margin: 0;
-  padding: 0 24px;
+  padding: 0 1.5rem;
   list-style: none;
-  min-height: 56px;
-  margin-top: 597px;
-  margin-left: 25px;
+  min-height: 3.5rem;
+  margin-top: 37vw;
+  margin-left: 1.6rem;
 }
 .nav-list li {
   display: flex;
   align-items: center;
-  margin-right: 44px;
-  gap: 16px; /* или 4px, подберите визуально */
+  margin-right: 2.75rem;
+  gap: 1rem; 
 }
 .nav-list li:last-child {
   margin-right: 0;
 }
 .nav-list a {
-  color: rgba(31, 41, 55, 1);
+  color: var(--color-text-main);
   text-decoration: none;
   font-weight: 500;
-  letter-spacing: 0.5px;
-  font-size: 16px;
+  letter-spacing: 0.03rem;
+  font-size: 1rem;
 }
 .nav-list a:hover {
-  color: rgba(37, 129, 235, 1); /* насыщенный синий */
+  color: var(--color-list); 
 }
 .nav-list img {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   display: inline-block;
-  margin-right: -8px; /* или 4px */
+  margin-right: -0.5rem;
 }
 
 @media (min-width: 1281px) {
@@ -60,21 +60,21 @@ import Arrow from '/arrow.svg'
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 660px auto;
+    margin: 41vw auto;
 }
 }
 
 @media (max-width: 960px) {
   .nav-list {
-    min-height: 48px;
-    font-size: 14px;
-    margin-top: 8px;
-    margin-left: -10px;
+    min-height: 3rem;
+    font-size: 0.88rem;
+    margin-top: 0.5rem;
+    margin-left: -0.6rem;
     width: 97%;
   }
   .nav-list li {
-    margin-right: 24px;
-    gap: 16px;
+    margin-right: 1.5rem;
+    gap: 1rem;
   }
 }
 
@@ -82,16 +82,16 @@ import Arrow from '/arrow.svg'
   .nav-list {
     flex-direction: column;
     align-items: stretch;
-    min-height: 36px;
-    margin-top: -94px;
-    padding: 0 0px;
-    width: 40vw;
-    margin-left: 0px;
+    min-height: 2.25rem;
+    margin-top: -6rem;
+    padding: 0;
+    width: 80vw;
+    margin-left: 0;
   }
   .nav-list li {
-    margin: 0 0 12px 0;
-    gap: 16px;
-    font-size: 12px;
+    margin: 0 0 0.75rem 0;
+    gap: 1rem;
+    font-size: 0.75rem;
     width: 100%;
     justify-content: flex-start;
   }
@@ -99,9 +99,8 @@ import Arrow from '/arrow.svg'
     margin-bottom: 0;
   }
   .nav-list img {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
   }
 }
-
 </style>

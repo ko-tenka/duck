@@ -75,9 +75,9 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 56px;
-  background: #fff;
-  margin-top: 11px;
+  height: 3.5rem;
+  background: var(--color-bg);
+  margin-top: 0.7rem;
 }
 
 .navbar-left {
@@ -85,37 +85,36 @@ onUnmounted(() => {
 }
 
 .navbar-logo {
-  height: 40px;
+  height: 2.9rem;
   width: auto;
   display: block;
 }
 
 .navbar-list {
   display: flex;
-  gap: 21px;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
   flex: 1 1 0%;
   justify-content: center;
-  margin-left: 99px;
+  margin-left: 6.8rem;
 }
 
 .navbar-list a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: var(--color-black);
   font-weight: 500;
   transition: color 0.2s;
   position: relative;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.38rem;
   letter-spacing: 0.3px;
+  font-size: 1rem;
 }
 
 .navbar-list a img {
-  /* width: 16px;
-  height: 16px; */
   display: inline-block;
 }
 
@@ -123,17 +122,17 @@ onUnmounted(() => {
   content: '';
   display: block;
   width: 100%;
-  height: 2px;
-  background: rgba(37, 129, 235, 1);
+  height: 0.13rem;
+  background: var(--color-list);
   position: absolute;
   left: 0;
-  bottom: -13px;
+  bottom: -0.8rem;
   opacity: 0;
   transition: opacity 0.2s;
 }
 
 .navbar-list a:hover {
-  color: rgba(37, 129, 235, 1);
+  color: var(--color-list);
 }
 
 .navbar-list a:hover::after {
@@ -143,12 +142,12 @@ onUnmounted(() => {
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   flex: 0 0 auto;
 }
 
 .catalog-arrow {
-  margin-left: 1px; /* gap 6px - 5px = 1px */
+  margin-left: 0.06rem;
 }
 
 .burger-btn {
@@ -156,16 +155,16 @@ onUnmounted(() => {
   background: none;
   border: none;
   padding: 0;
-  margin-left: 16px;
+  margin-left: 1rem;
   cursor: pointer;
 }
 
 .mobile-menu {
   position: absolute;
-  top: 56px;
+  top: 3.5rem;
   left: 0;
   right: 0;
-  background: #fff;
+  background: var(--color-bg);
   box-shadow: none;
   z-index: 100;
   overflow: hidden;
@@ -173,30 +172,30 @@ onUnmounted(() => {
   opacity: 0;
   transition: max-height 0.8s cubic-bezier(0.4,0,0.2,1), opacity 0.6s;
   pointer-events: none;
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 0.75rem 0.75rem;
 }
 .mobile-menu--open {
-  max-height: 500px;
+  max-height: 31.25rem;
   opacity: 1;
   pointer-events: auto;
 }
 .mobile-menu ul {
   list-style: none;
   margin: 0;
-  padding: 35px 0 16px 0;
+  padding: 2.2rem 0 1rem 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 1.56rem;
   align-items: center;
 }
 .mobile-menu a {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
   letter-spacing: 0.5%;
-  color: rgba(0,0,0,1);
+  color: var(--color-black);
   text-decoration: none;
   position: relative;
   transition: color 0.2s;
@@ -205,16 +204,16 @@ onUnmounted(() => {
   content: '';
   display: block;
   width: 100%;
-  height: 2px;
-  background: rgba(37, 129, 235, 1);
+  height: 0.13rem;
+  background: var(--color-list);
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -0.5rem;
   opacity: 0;
   transition: opacity 0.2s;
 }
 .mobile-menu a:hover {
-  color: rgba(37, 129, 235, 1);
+  color: var(--color-list);
 }
 .mobile-menu a:hover::after {
   opacity: 1;
@@ -225,17 +224,17 @@ onUnmounted(() => {
 }
 
 .close-icon {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: block;
 }
 
 .overlay {
   position: fixed;
-  top: 56px; /* высота навбара */
+  top: 3.5rem;
   left: 0;
   width: 100vw;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 3.5rem);
   background: rgba(0,0,0,0.45);
   z-index: 99;
   transition: opacity 0.3s;
@@ -247,7 +246,7 @@ onUnmounted(() => {
     display: none !important;
   }
   .navbar-actions {
-    gap: 8px;
+    gap: 0.5rem;
     flex-direction: row;
   }
   .burger-btn {
@@ -258,10 +257,10 @@ onUnmounted(() => {
 
 @media (max-width: 375px) {
   .navbar {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .navbar-actions {
-    gap: 0px;
+    gap: 0;
   }
   .navbar-actions MyButton,
   .navbar-actions .my-button {
@@ -270,8 +269,8 @@ onUnmounted(() => {
   .mobile-menu-btn {
     display: flex;
     justify-content: center;
-    padding: 10px 0 8px 0;
-    padding-bottom: 35px;
+    padding: 0.63rem 0 0.5rem 0;
+    padding-bottom: 2.2rem;
   }
 }
 </style>

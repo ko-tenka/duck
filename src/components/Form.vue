@@ -37,28 +37,26 @@ import Close from '/close.svg'
   z-index: 200;
 }
 .form-popup {
-  width: 417px;
-  height: 360px;
-  background: #fff;
-  border-radius: 20px;
-  padding: 40px 40px 40px 40px;
+  width: 90vw;
+  max-width: 26rem;
+  height: auto;
+  background: var(--color-bg);
+  border-radius: 1.25rem;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
   box-sizing: border-box;
   opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .form-close {
   position: absolute;
-  top: 9px;
-  right: 7px;
+  top: 0.6rem;
+  right: 0.45rem;
   background: none;
   border: none;
-  /* font-size: 26px; */
-  /* width: 20px;
-  height: 20px; */
   cursor: pointer;
   color: #888;
   padding: 0;
@@ -69,51 +67,50 @@ import Close from '/close.svg'
 .form-fields {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.3rem;
   width: 100%;
-  align-items: center;
   align-items: flex-start;
 }
 .form-fields input {
-  width: 337px;
-  height: 40px;
-  padding: 10px 16px;
-  border-radius: 14px;
-  border: 1px solid #ddd;
-  font-size: 16px;
+  width: 100%;
+  min-width: 10rem;
+  height: 2.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.88rem;
+  border: 1px solid var(--color-grey);
+  font-size: 1rem;
   opacity: 1;
   box-sizing: border-box;
   display: block;
 }
 .form-fields input::placeholder {
-  color: rgba(167, 167, 167, 1);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .form-submit {
-  background: rgba(234, 179, 8, 1);
-  color: #fff;
+  background: var(--color-orange);
+  color: var(--color-bg);
   border: none;
-  border-radius: 8px;
-  padding: 10px 0;
-  font-size: 16px;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
   width: 100%;
-  margin-top: -10px;
+  margin-top: -0.6rem;
 }
 .form-submit:hover {
-  background: rgba(254, 199, 28, 1);
+  background: var(--color-orange-hover);
 }
 .form-agreement {
-  /* margin-top: 10px; */
-  font-size: 14px;
-  color: rgba(0, 0, 0, 1);
+  font-size: 0.9rem;
+  color: var(--color-black);
   text-align: start;
   line-height: 1.4;
 }
 .form-agreement .form-link {
-  color: rgba(37, 129, 235, 1);
+  color: var(--color-list);
   text-decoration: none;
   cursor: pointer;
 }
@@ -121,48 +118,49 @@ import Close from '/close.svg'
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.375rem;
   letter-spacing: 0%;
-  color: rgba(0,0,0,1);
-  margin-bottom: 2px;
+  color: var(--color-black);
+  margin-bottom: 0.13rem;
   display: block;
   text-align: left;
-  width: 337px;
+  width: 100%;
 }
 .form-label--name {
-  margin-bottom: -1px;
+  margin-bottom: -0.06rem;
 }
 .form-label--phone {
-  margin-bottom: -1px;
-  margin-top: 8px;
+  margin-bottom: -0.06rem;
+  margin-top: 0.5rem;
 }
 .form-required {
-  color: #E53935;
-  font-size: 16px;
+  color: var(--color-error);
+  font-size: 1rem;
   vertical-align: middle;
 }
 @media (max-width: 960px) {
   .form-popup {
-    width: 344px;
-    height: 320px;
-    border-radius: 20px;
-    padding: 20px 16px 20px 16px;
-    gap: 20px;
+    width: 96vw;
+    max-width: 21.5rem;
+    border-radius: 1.25rem;
+    padding: 1.25rem 1rem 1.25rem 1rem;
+    gap: 1.25rem;
   }
   .form-fields input {
-    width: 312px;
-    height: 40px;
-    border-radius: 14px;
-    padding: 10px 16px;
+    width: 100%;
+    min-width: 8rem;
+    height: 2.5rem;
+    border-radius: 0.88rem;
+    padding: 0.6rem 1rem;
     opacity: 1;
     border-width: 1px;
   }
   .form-agreement {
-    line-height: 22px;
+    line-height: 1.375rem;
   }
   .form-label--phone {
-  margin-top: 6px;
+    margin-top: 0.38rem;
+  }
 }
-}
-</style> 
+</style>

@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .my-button {
-  height: 38px;
+  height: 2.6rem;
   opacity: 1;
   display: flex;
   align-items: center;
@@ -31,37 +31,34 @@ export default {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 100%;
-  letter-spacing: 0.5%;
+  letter-spacing: 0.04em;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
-  padding: 0 12.5px;
-  background: var(--Orange, rgba(234, 179, 8, 1));
+  padding: 0 0.9rem;
+  background: var(--color-orange);
   cursor: pointer;
   transition: background 0.2s;
-
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-bg);
 }
 .my-button--orange {
-  background: rgba(234, 179, 8, 1);
+  background: var(--color-orange);
 }
 .my-button--orange:hover {
-  background: rgba(254, 199, 28, 1);
+  background: var(--color-orange-hover);
 }
 .my-button--orange:active {
-  background: rgba(204, 149, 0, 1);
+  background: var(--color-orange-active);
 }
 .my-button--blue {
-  background: rgba(37, 129, 235, 1);
+  background: var(--color-list);
 }
 .my-button--blue:hover {
-  background: rgba(67, 159, 255, 1);
-;
+  background: var(--color-blue-hover);
 }
 .my-button--blue:active {
-  background: rgba(7, 99, 205, 1);
-;
+  background: var(--color-blue-active);
 }
-</style> 
+</style>

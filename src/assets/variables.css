@@ -1,0 +1,14 @@
+:root {
+  --color-bg: #fff;
+  --color-black: #000;
+  --color-text-main: rgba(31, 41, 55, 1);
+  --color-list: rgba(37, 129, 235, 1);
+  --color-orange: rgba(234, 179, 8, 1);
+  --color-orange-hover: rgba(254, 199, 28, 1);
+  --color-orange-active: rgba(204, 149, 0, 1);
+  --color-blue-hover: rgba(67, 159, 255, 1);
+  --color-blue-active: rgba(7, 99, 205, 1);
+  --color-grey: #ddd;
+  --color-placeholder: rgba(167, 167, 167, 1);
+  --color-error: #E53935;
+} 

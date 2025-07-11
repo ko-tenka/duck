@@ -1,25 +1,23 @@
+@import './assets/variables.css';
 :root {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.43;
   letter-spacing: 0.5%;
-
-  color: rgba(31, 41, 55, 1);
-
+  color: var(--color-text-main);
 }
 
 body {
   margin: 0;
+  background: var(--color-bg);
 }
 
-
 #app {
-  max-width: 1280px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
   text-align: center;
 }
 

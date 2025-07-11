@@ -13,5 +13,5 @@ import UiIcon from './ui/Icon.vue';
 </template>
 
 <style scoped>
-
+/* Нет px, оставляю пустым */
 </style> -->
