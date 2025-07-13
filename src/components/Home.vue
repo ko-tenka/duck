@@ -105,13 +105,24 @@ onUnmounted(() => {
     margin-bottom: 0.7vw;
 }
 
+.home-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 1281px) {
 .home-wrapper { 
     min-height: 100vh;
       height: 60vw;
-      overflow: hidden;
       position: relative;
       margin-top: -7vw;
+      margin-left: -1vw;
 }
 }
 
@@ -120,7 +131,6 @@ onUnmounted(() => {
   .home-wrapper {
       width: 98.1vw;
       height: 60vw;
-      overflow: hidden;
       position: relative;
    } 
     .home-image--many {
@@ -160,7 +170,6 @@ onUnmounted(() => {
       width: 92vw;
       height: 150vw;
       padding-right: 4.58%;
-      overflow: hidden;
       position: relative;
    } 
     .home-image--many {

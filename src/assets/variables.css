@@ -11,4 +11,15 @@
   --color-grey: #ddd;
   --color-placeholder: rgba(167, 167, 167, 1);
   --color-error: #E53935;
+
+  /* Z-Index System - Professional Layers */
+  --z-base: 1;
+  --z-content: 10;
+  --z-navigation: 100;
+  --z-button: 101;
+  --z-dropdown: 200;
+  --z-modal: 300;
+  --z-overlay: 400;
+  --z-tooltip: 500;
+  --z-toast: 600;
 } 

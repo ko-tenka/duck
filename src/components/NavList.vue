@@ -26,6 +26,8 @@ import Arrow from '/arrow.svg'
   min-height: 3.5rem;
   margin-top: 47.2vw;
   margin-left: 1.8rem;
+  position: relative;
+  z-index: var(--z-content);
 }
 .nav-list li {
   display: flex;
@@ -56,6 +58,11 @@ import Arrow from '/arrow.svg'
 @media (min-width: 1281px) {
 .nav-list {
     margin-top: -8vw;
+    
+}
+.nav-list a {
+  z-index: 1000;
+  pointer-events: auto;
 }
 }
 

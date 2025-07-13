@@ -12,7 +12,14 @@
     </ul>
     <div class="navbar-actions">
       <UiIcon name="basket" v-if="!isMobileMenuOpen" />
-      <MyButton color="orange" v-if="!isMobileButtonInMenu && (!isMobileMenuOpen || !isMobile960)" @click="showPopup = true">Заказать обратный звонок</MyButton>
+      <MyButton 
+        color="orange" 
+        v-if="(!isMobileMenuOpen || !isMobile960) && !isMobileButtonInMenu" 
+        @click="showPopup = true"
+        class="navbar-button"
+      >
+        Заказать обратный звонок
+      </MyButton>
       <button class="burger-btn" @click="toggleMobileMenu" v-if="isMobile">
         <UiIcon v-if="!isMobileMenuOpen" name="nav" />
         <img v-else :src="Close" alt="Закрыть" class="close-icon" />
@@ -27,7 +34,7 @@
         <li><a href="#">Отзывы</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <div class="mobile-menu-btn" v-if="isMobileButtonInMenu">
+      <div class="mobile-menu-btn">
         <MyButton color="orange" @click="showPopup = true">Заказать обратный звонок</MyButton>
       </div>
     </div>
@@ -78,6 +85,8 @@ onUnmounted(() => {
   height: 3.5rem;
   background: var(--color-bg);
   margin-top: 0.7rem;
+  position: relative;
+  z-index: var(--z-navigation);
 }
 
 .navbar-left {
@@ -92,13 +101,14 @@ onUnmounted(() => {
 
 .navbar-list {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.3rem;
   list-style: none;
   margin: 0;
   padding: 0;
   flex: 1 1 0%;
   justify-content: center;
-  margin-left: 6.8rem;
+  margin-left: 6.2rem;
+
 }
 
 .navbar-list a {
@@ -241,6 +251,20 @@ onUnmounted(() => {
   pointer-events: auto;
 }
 
+
+
+
+@media (min-width: 1281px) {
+.navbar-list a {
+  z-index: var(--z-button);
+  pointer-events: auto;
+}
+.navbar-button {
+  position: relative;
+  z-index: var(--z-button);
+  pointer-events: auto;
+}
+}
 
 @media (max-width: 960px) {
   .navbar-list {

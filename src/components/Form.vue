@@ -36,7 +36,7 @@ import MyButton from '../ui/MyButton.vue'
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 200;
+  z-index: var(--z-overlay);
 }
 .form-popup {
   width: 95vw;
@@ -52,6 +52,7 @@ import MyButton from '../ui/MyButton.vue'
   align-items: center;
   position: relative;
   gap: 1.3rem;
+  z-index: var(--z-modal);
 }
 .form-close {
   position: absolute;
